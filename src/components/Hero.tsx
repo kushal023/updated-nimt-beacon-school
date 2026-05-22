@@ -1,0 +1,98 @@
+import React from "react";
+import { Check, ArrowDown, ExternalLink } from "lucide-react";
+import InteractiveVideoPlayer from "./InteractiveVideoPlayer";
+
+export default function Hero() {
+  const points = [
+    "CBSE Affiliated",
+    "Safe Campus & 24x7 Security",
+    "IIT-JEE & NEET Support",
+    "Personal Mentorship",
+  ];
+
+  const handleApplyClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    document.querySelector("#admissions")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <section className="relative overflow-hidden bg-white py-16 lg:py-24">
+      {/* Background soft light shapes for high-end look */}
+      <div className="absolute right-0 top-0 -z-10 h-96 w-96 rounded-full bg-blue-50/50 blur-3xl"></div>
+      <div className="absolute left-10 bottom-0 -z-10 h-80 w-80 rounded-full bg-indigo-50/30 blur-3xl"></div>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-[#0041f5] rounded-3xl py-12 px-6 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden" style={{ backgroundColor: "#0041f5" }}>
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
+          
+          {/* Left Hero Column */}
+          <div className="flex flex-col text-left lg:col-span-7">
+            <h1 className="font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl lg:leading-[1.15]">
+              Looking for the <br className="hidden sm:inline" />
+              Perfect Boarding <br className="hidden sm:inline" />
+              School in Delhi <br className="hidden sm:inline" />
+              NCR for Your Child?
+            </h1>
+            
+            <p className="mt-6 text-lg font-medium text-blue-100 sm:text-xl max-w-2xl leading-relaxed">
+              A Safe, Disciplined & Future-Ready Boarding School Where Students Learn, Grow & Succeed With Confidence.
+            </p>
+
+            <div className="mt-10">
+              <span className="text-xs font-bold tracking-widest text-[#93c5fd] uppercase block mb-4">
+                Trusted by Parents
+              </span>
+              <div className="grid grid-cols-1 gap-y-3 gap-x-6 sm:grid-cols-2 max-w-xl">
+                {points.map((point) => (
+                  <div key={point} className="flex items-center gap-3">
+                    <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/15 text-white border border-white/20">
+                      <Check className="h-3.5 w-3.5 stroke-[3]" />
+                    </div>
+                    <span className="text-sm font-semibold text-white">{point}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <a
+                href="#admissions"
+                onClick={handleApplyClick}
+                className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-bold text-[#0041f5] shadow-lg hover:bg-blue-50 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
+              >
+                Apply Now
+              </a>
+              <a
+                href="#admissions"
+                onClick={handleApplyClick}
+                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 bg-transparent px-8 py-4 text-base font-bold text-white hover:border-white hover:bg-white/10 transition-all duration-200"
+              >
+                Book Campus Visit
+              </a>
+            </div>
+
+            <div className="mt-6 flex items-center gap-2.5 text-sm text-blue-100 font-medium">
+              <span>Chat with admissions:</span>
+              <a
+                href="https://wa.me/91XXXXXXXXXX"
+                target="_blank"
+                rel="noreferrer"
+                className="text-white bg-white/10 px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/25 inline-flex items-center gap-1.5 transition-colors duration-200 font-bold"
+              >
+                <span>WhatsApp Admissions</span>
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Right Video Player Column */}
+          <div className="lg:col-span-5 w-full">
+            <div className="relative mx-auto max-w-md lg:max-w-none">
+              <InteractiveVideoPlayer />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
