@@ -16,12 +16,12 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white pt-0 pb-16 lg:pb-24">
+    <section className="relative overflow-hidden pt-0 pb-12 sm:pb-16 lg:pb-20" style={{ backgroundColor: "#0041f5" }}>
       {/* Background soft light shapes for high-end look */}
-      <div className="absolute right-0 top-0 -z-10 h-96 w-96 rounded-full bg-blue-50/50 blur-3xl"></div>
-      <div className="absolute left-10 bottom-0 -z-10 h-80 w-80 rounded-full bg-indigo-50/30 blur-3xl"></div>
+      <div className="absolute right-0 top-0 -z-10 h-96 w-96 rounded-full bg-white/5 blur-3xl"></div>
+      <div className="absolute left-10 bottom-0 -z-10 h-80 w-80 rounded-full bg-white/5 blur-3xl"></div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-[#0041f5] rounded-3xl py-12 px-6 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden" style={{ backgroundColor: "#0041f5" }}>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative z-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
           
           {/* Left Hero Column */}
