@@ -16,7 +16,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white py-16 lg:py-24">
+    <section className="relative overflow-hidden bg-white pt-0 pb-16 lg:pb-24">
       {/* Background soft light shapes for high-end look */}
       <div className="absolute right-0 top-0 -z-10 h-96 w-96 rounded-full bg-blue-50/50 blur-3xl"></div>
       <div className="absolute left-10 bottom-0 -z-10 h-80 w-80 rounded-full bg-indigo-50/30 blur-3xl"></div>
@@ -62,26 +62,16 @@ export default function Hero() {
                 Apply Now
               </a>
               <a
-                href="#admissions"
-                onClick={handleApplyClick}
+                href="https://wa.me/919599931443?text=Hi%2C%20I%20would%20like%20to%20book%20a%20campus%20visit%20to%20NIMT%20Boarding%20School."
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 bg-transparent px-8 py-4 text-base font-bold text-white hover:border-white hover:bg-white/10 transition-all duration-200"
               >
                 Book Campus Visit
               </a>
             </div>
 
-            <div className="mt-6 flex items-center gap-2.5 text-sm text-blue-100 font-medium">
-              <span>Chat with admissions:</span>
-              <a
-                href="https://wa.me/91XXXXXXXXXX"
-                target="_blank"
-                rel="noreferrer"
-                className="text-white bg-white/10 px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/25 inline-flex items-center gap-1.5 transition-colors duration-200 font-bold"
-              >
-                <span>WhatsApp Admissions</span>
-                <ExternalLink className="h-3.5 w-3.5" />
-              </a>
-            </div>
+
           </div>
 
           {/* Right Video Player Column */}
