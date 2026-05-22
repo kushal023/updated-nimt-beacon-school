@@ -20,11 +20,11 @@ export default function StudentTransformation() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Title / Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-display text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="text-center max-w-4xl mx-auto mb-16">
+          <h2 className="font-display text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl lg:leading-[1.1]">
             Student Transformation
           </h2>
-          <p className="mt-4 text-base text-gray-500 font-medium leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl text-gray-500 font-medium leading-relaxed">
             See the remarkable change in our students at NIMT Beacon
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function StudentTransformation() {
                   key={`before-${index}`}
                   className="rounded-xl border border-red-100 bg-red-50/40 p-5 text-center shadow-sm"
                 >
-                  <span className="text-sm font-bold text-red-700 tracking-wide font-display">
+                  <span className="text-base md:text-lg font-bold text-red-700 tracking-wide font-display">
                     {pair.before}
                   </span>
                 </div>
@@ -64,7 +64,7 @@ export default function StudentTransformation() {
                   key={`after-${index}`}
                   className="rounded-xl border border-green-100 bg-green-50/40 p-5 text-center shadow-sm"
                 >
-                  <span className="text-sm font-bold text-green-700 tracking-wide font-display">
+                  <span className="text-base md:text-lg font-bold text-green-700 tracking-wide font-display">
                     {pair.after}
                   </span>
                 </div>
@@ -79,11 +79,11 @@ export default function StudentTransformation() {
           <div className="rounded-2xl bg-indigo-50/70 border border-blue-100 p-8 text-center relative overflow-hidden shadow-sm">
             <div className="absolute right-0 top-0 h-16 w-16 bg-blue-500/5 blur-2xl rounded-full"></div>
             
-            <h3 className="font-display text-xl font-extrabold text-[#1344e6] uppercase tracking-wider">
+            <h3 className="font-display text-2xl md:text-3xl font-extrabold text-[#1344e6] uppercase tracking-wider">
               NIMT Beacon Makes the Difference
             </h3>
             
-            <p className="mt-3 text-sm font-semibold text-gray-700 leading-relaxed max-w-2xl mx-auto">
+            <p className="mt-4 text-base md:text-lg font-semibold text-slate-600 leading-relaxed max-w-3xl mx-auto">
               Our comprehensive approach to education combines academic excellence with personal development, ensuring every student reaches their full potential.
             </p>
           </div>

@@ -30,7 +30,7 @@ export default function HealthyBody() {
             
             {/* Dining Hall large container */}
             <div className="aspect-[4/3] rounded-3xl bg-green-50/70 border border-green-100 p-8 flex items-center justify-center text-center shadow-inner">
-              <span className="text-[#15803d] font-display text-sm font-bold tracking-widest uppercase">
+              <span className="text-[#15803d] font-display text-base font-extrabold tracking-widest uppercase">
                 Dining Hall
               </span>
             </div>
@@ -38,12 +38,12 @@ export default function HealthyBody() {
             {/* Split row: Balanced Meals & Sports */}
             <div className="grid grid-cols-2 gap-4">
               <div className="h-28 rounded-2xl bg-emerald-50/50 border border-emerald-100/40 p-4 flex items-center justify-center text-center shadow-sm">
-                <span className="text-[#166534] font-display text-xs font-bold tracking-wider uppercase">
+                <span className="text-[#166534] font-display text-sm font-bold tracking-wider uppercase">
                   Balanced Meals
                 </span>
               </div>
               <div className="h-28 rounded-2xl bg-green-50/60 border border-green-100/50 p-4 flex items-center justify-center text-center shadow-sm">
-                <span className="text-[#166534] font-display text-xs font-bold tracking-wider uppercase">
+                <span className="text-[#166534] font-display text-sm font-bold tracking-wider uppercase">
                   Sports
                 </span>
               </div>
@@ -51,7 +51,7 @@ export default function HealthyBody() {
 
             {/* Wellness Program card */}
             <div className="h-28 rounded-2xl bg-gradient-to-r from-green-50/40 to-emerald-50/40 border border-green-100/30 p-6 flex items-center justify-center text-center shadow-sm">
-              <span className="text-[#15803d]/90 font-display text-xs font-bold tracking-wider uppercase">
+              <span className="text-[#15803d]/90 font-display text-sm font-bold tracking-wider uppercase">
                 Wellness Program
               </span>
             </div>
@@ -61,18 +61,18 @@ export default function HealthyBody() {
           {/* Right Column Content Text Block */}
           <div className="flex flex-col justify-center text-left lg:col-span-7">
             
-            <h2 className="font-display text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl leading-tight">
+            <h2 className="font-display text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl lg:leading-[1.1] leading-tight">
               Healthy Body. <br />
               <span className="text-[#16a34a]">Sharp Mind.</span>
             </h2>
 
-            <div className="mt-8 space-y-6 max-w-xl">
+            <div className="mt-8 space-y-6 max-w-2xl">
               {points.map((pt, idx) => (
                 <div key={idx} className="flex flex-col text-left">
-                  <span className="text-base font-bold text-gray-800 font-display">
+                  <span className="text-lg md:text-xl font-bold text-gray-800 font-display">
                     {pt.title}
                   </span>
-                  <p className="mt-1 text-sm font-semibold text-gray-400 leading-relaxed">
+                  <p className="mt-2 text-base font-semibold text-slate-500 leading-relaxed">
                     {pt.desc}
                   </p>
                 </div>

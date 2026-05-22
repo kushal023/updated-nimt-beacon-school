@@ -84,17 +84,17 @@ export default function InquiryForm() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Title Block */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-display text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="text-center max-w-4xl mx-auto mb-16">
+          <h2 className="font-display text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl lg:leading-[1.1]">
             Inquiry for Admission
           </h2>
-          <p className="mt-4 text-base text-gray-500 font-medium leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl text-gray-500 font-medium leading-relaxed">
             Fill out the form below to inquire about admission to NIMT Beacon School
           </p>
         </div>
 
         {/* Form Container */}
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           <div className="rounded-2xl border border-slate-100 bg-white p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow relative">
             
             {isSuccess ? (
@@ -103,16 +103,16 @@ export default function InquiryForm() {
                   <CheckCircle className="h-10 w-10 stroke-[2.5]" />
                 </div>
                 
-                <h3 className="font-display text-2xl font-extrabold text-[#1344e6]">
+                <h3 className="font-display text-3xl font-extrabold text-[#1344e6]">
                   Inquiry Submitted!
                 </h3>
-                <p className="mt-3 text-sm font-semibold text-gray-500 max-w-sm leading-relaxed">
+                <p className="mt-4 text-base font-semibold text-slate-600 max-w-md leading-relaxed">
                   Thank you, <strong>{formData.parentName}</strong>. We've received your inquiry details for <strong>{formData.studentName}</strong> (applying for {formData.targetClass}).
                 </p>
 
-                <div className="mt-8 rounded-xl bg-slate-50 border border-slate-100 px-6 py-4.5 text-xs text-slate-400 font-mono tracking-wide">
+                <div className="mt-8 rounded-xl bg-slate-50 border border-slate-100 px-6 py-5 text-sm text-slate-500 font-mono tracking-wide">
                   <span>Reference ID: NIMT-2026-{(Math.floor(Math.random() * 90000) + 10000)}</span>
-                  <div className="mt-1 font-semibold text-slate-500">
+                  <div className="mt-2 font-bold text-slate-600">
                     A representative will contact you on {formData.mobile} soon.
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export default function InquiryForm() {
                     setIsSuccess(false);
                     setFormData({ studentName: "", parentName: "", email: "", mobile: "", targetClass: "" });
                   }}
-                  className="mt-8 text-xs font-extrabold tracking-widest text-[#1344e6] hover:underline uppercase block cursor-pointer"
+                  className="mt-8 text-sm font-extrabold tracking-widest text-[#1344e6] hover:underline uppercase block cursor-pointer"
                 >
                   Submit Another Inquiry
                 </button>
@@ -132,7 +132,7 @@ export default function InquiryForm() {
                 
                 {/* Student Name */}
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-bold text-gray-800 font-display">
+                  <label className="text-sm font-bold text-gray-800 font-display">
                     Student Name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -141,20 +141,20 @@ export default function InquiryForm() {
                     value={formData.studentName}
                     onChange={handleInputChange}
                     placeholder="Enter student name"
-                    className={`w-full rounded-xl border px-4 py-3 text-sm font-semibold transition-all outline-none ${
+                    className={`w-full rounded-xl border px-5 py-3.5 text-base font-semibold transition-all outline-none ${
                       errors.studentName 
                         ? "border-red-300 focus:border-red-500 focus:ring-1 focus:ring-red-100" 
                         : "border-slate-200 focus:border-[#1344e6] focus:ring-1 focus:ring-blue-100"
                     }`}
                   />
                   {errors.studentName && (
-                    <span className="text-xs font-bold text-red-500">{errors.studentName}</span>
+                    <span className="text-sm font-bold text-red-500">{errors.studentName}</span>
                   )}
                 </div>
 
                 {/* Parent Name */}
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-bold text-gray-800 font-display">
+                  <label className="text-sm font-bold text-gray-800 font-display">
                     Parent Name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -163,20 +163,20 @@ export default function InquiryForm() {
                     value={formData.parentName}
                     onChange={handleInputChange}
                     placeholder="Enter parent name"
-                    className={`w-full rounded-xl border px-4 py-3 text-sm font-semibold transition-all outline-none ${
+                    className={`w-full rounded-xl border px-5 py-3.5 text-base font-semibold transition-all outline-none ${
                       errors.parentName 
                         ? "border-red-300 focus:border-red-500 focus:ring-1 focus:ring-red-100" 
                         : "border-slate-200 focus:border-[#1344e6] focus:ring-1 focus:ring-blue-100"
                     }`}
                   />
                   {errors.parentName && (
-                    <span className="text-xs font-bold text-red-500">{errors.parentName}</span>
+                    <span className="text-sm font-bold text-red-500">{errors.parentName}</span>
                   )}
                 </div>
 
                 {/* Email Address */}
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-bold text-gray-800 font-display">
+                  <label className="text-sm font-bold text-gray-800 font-display">
                     Email Address <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -185,20 +185,20 @@ export default function InquiryForm() {
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="Enter email address"
-                    className={`w-full rounded-xl border px-4 py-3 text-sm font-semibold transition-all outline-none ${
+                    className={`w-full rounded-xl border px-5 py-3.5 text-base font-semibold transition-all outline-none ${
                       errors.email 
                         ? "border-red-300 focus:border-red-500 focus:ring-1 focus:ring-red-100" 
                         : "border-slate-200 focus:border-[#1344e6] focus:ring-1 focus:ring-blue-100"
                     }`}
                   />
                   {errors.email && (
-                    <span className="text-xs font-bold text-red-500">{errors.email}</span>
+                    <span className="text-sm font-bold text-red-500">{errors.email}</span>
                   )}
                 </div>
 
                 {/* Mobile Number */}
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-bold text-gray-800 font-display">
+                  <label className="text-sm font-bold text-gray-800 font-display">
                     Mobile Number <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -207,20 +207,20 @@ export default function InquiryForm() {
                     value={formData.mobile}
                     onChange={handleInputChange}
                     placeholder="Enter mobile number"
-                    className={`w-full rounded-xl border px-4 py-3 text-sm font-semibold transition-all outline-none ${
+                    className={`w-full rounded-xl border px-5 py-3.5 text-base font-semibold transition-all outline-none ${
                       errors.mobile 
                         ? "border-red-300 focus:border-red-500 focus:ring-1 focus:ring-red-100" 
                         : "border-slate-200 focus:border-[#1344e6] focus:ring-1 focus:ring-blue-100"
                     }`}
                   />
                   {errors.mobile && (
-                    <span className="text-xs font-bold text-red-500">{errors.mobile}</span>
+                    <span className="text-sm font-bold text-red-500">{errors.mobile}</span>
                   )}
                 </div>
 
                 {/* Applying for Class Selection */}
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-bold text-gray-800 font-display">
+                  <label className="text-sm font-bold text-gray-800 font-display">
                     Applying for Class <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
@@ -228,7 +228,7 @@ export default function InquiryForm() {
                       name="targetClass"
                       value={formData.targetClass}
                       onChange={handleInputChange}
-                      className={`w-full rounded-xl border px-4 py-3 text-sm font-semibold bg-white transition-all outline-none appearance-none cursor-pointer ${
+                      className={`w-full rounded-xl border px-5 py-3.5 text-base font-semibold bg-white transition-all outline-none appearance-none cursor-pointer ${
                         errors.targetClass 
                           ? "border-red-300 focus:border-red-500 focus:ring-1 focus:ring-red-100" 
                           : "border-slate-200 focus:border-[#1344e6] focus:ring-1 focus:ring-blue-100"
@@ -246,7 +246,7 @@ export default function InquiryForm() {
                     </div>
                   </div>
                   {errors.targetClass && (
-                    <span className="text-xs font-bold text-red-500">{errors.targetClass}</span>
+                    <span className="text-sm font-bold text-red-500">{errors.targetClass}</span>
                   )}
                 </div>
 
@@ -254,11 +254,11 @@ export default function InquiryForm() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#1344e6] text-white py-4 font-bold text-sm shadow-md hover:bg-blue-700 transition-colors disabled:opacity-75 cursor-pointer"
+                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#1344e6] text-white py-4.5 font-bold text-base shadow-md hover:bg-blue-700 transition-colors disabled:opacity-75 cursor-pointer"
                 >
                   {isSubmitting ? (
                     <>
-                      <Loader2 className="h-4 w-4 animate-spin" />
+                      <Loader2 className="h-5 w-5 animate-spin" />
                       <span>Submitting Inquiry...</span>
                     </>
                   ) : (
@@ -267,7 +267,7 @@ export default function InquiryForm() {
                 </button>
 
                 {/* Small grey disclaimer */}
-                <span className="block text-[10px] font-bold text-gray-400 text-center leading-snug">
+                <span className="block text-xs font-bold text-gray-400 text-center leading-relaxed mt-2">
                   By submitting this form, you agree to be contacted by NIMT Beacon School regarding your inquiry.
                 </span>
 

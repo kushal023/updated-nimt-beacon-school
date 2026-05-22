@@ -55,11 +55,11 @@ export default function WhyNIMT() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Header Block */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-display text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="text-center max-w-4xl mx-auto mb-16">
+          <h2 className="font-display text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl lg:leading-[1.1]">
             Why Parents Trust NIMT Beacon School
           </h2>
-          <p className="mt-4 text-base text-gray-500 font-medium leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl text-gray-500 font-medium leading-relaxed">
             We provide comprehensive care, academic excellence, and holistic development.
           </p>
         </div>
@@ -76,11 +76,11 @@ export default function WhyNIMT() {
                 {point.icon}
               </div>
               
-              <h3 className="mt-5 text-base font-bold text-gray-900 font-display">
+              <h3 className="mt-5 text-lg md:text-xl font-bold text-gray-900 font-display">
                 {point.title}
               </h3>
               
-              <p className="mt-1.5 text-xs font-semibold text-gray-400">
+              <p className="mt-2 text-sm font-semibold text-slate-500">
                 {point.desc}
               </p>
             </div>

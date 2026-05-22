@@ -42,20 +42,20 @@ export default function MoreThanHostel() {
           
           {/* Left Block with Bullets */}
           <div className="flex flex-col justify-center text-left lg:col-span-7">
-            <h2 className="font-display text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="font-display text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl lg:leading-[1.1]">
               More Than a Hostel. <br />
               <span className="text-[#1344e6]">A Home Away From Home.</span>
             </h2>
             
-            <div className="mt-8 space-y-5 max-w-xl">
+            <div className="mt-8 space-y-6 max-w-xl">
               {points.map((pt) => (
                 <div key={pt.num} className="flex gap-4">
-                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-50 font-display text-xs font-extrabold text-[#1344e6] border border-blue-100 mt-0.5">
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-50 font-display text-xs font-extrabold text-[#1344e6] border border-blue-100 mt-1">
                     {pt.num}
                   </div>
-                  <div className="text-sm">
+                  <div className="text-base md:text-lg">
                     <span className="font-bold text-gray-900">{pt.boldText}:</span>{" "}
-                    <span className="font-medium text-gray-500">{pt.regularText}</span>
+                    <span className="font-medium text-slate-600 leading-relaxed">{pt.regularText}</span>
                   </div>
                 </div>
               ))}
@@ -68,7 +68,7 @@ export default function MoreThanHostel() {
               
               {/* Tall Live/Hostel Rooms Card */}
               <div className="aspect-[4/5] sm:aspect-auto sm:h-64 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100/50 p-6 flex items-center justify-center text-center shadow-sm">
-                <span className="text-sm font-semibold text-slate-500 font-display tracking-wider uppercase">
+                <span className="text-base font-bold text-slate-600 font-display tracking-wider uppercase">
                   Hostel Rooms
                 </span>
               </div>
@@ -76,12 +76,12 @@ export default function MoreThanHostel() {
               {/* Dual columns for Dining & Mentors */}
               <div className="flex flex-col gap-4">
                 <div className="h-28 rounded-2xl bg-indigo-50/60 border border-indigo-100/50 p-4 flex items-center justify-center text-center shadow-sm">
-                  <span className="text-xs font-semibold text-slate-500 font-display tracking-wider uppercase">
+                  <span className="text-sm font-bold text-slate-600 font-display tracking-wider uppercase">
                     Dining Hall
                   </span>
                 </div>
                 <div className="h-32 rounded-2xl bg-blue-50/70 border border-blue-100/50 p-4 flex items-center justify-center text-center shadow-sm">
-                  <span className="text-xs font-semibold text-slate-500 font-display tracking-wider uppercase">
+                  <span className="text-sm font-bold text-slate-600 font-display tracking-wider uppercase">
                     Mentors
                   </span>
                 </div>
@@ -91,7 +91,7 @@ export default function MoreThanHostel() {
 
             {/* Bottom wide photo container */}
             <div className="h-32 rounded-2xl bg-gradient-to-r from-blue-50/50 to-indigo-50/50 border border-blue-100/30 p-6 flex items-center justify-center text-center shadow-sm">
-              <span className="text-xs font-semibold text-slate-500 font-display tracking-wider uppercase">
+              <span className="text-sm font-bold text-slate-600 font-display tracking-wider uppercase">
                 Students Bonding
               </span>
             </div>

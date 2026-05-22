@@ -28,14 +28,14 @@ export default function Header() {
           {/* Logo Section */}
           <a href="#" className="flex items-center gap-3 group focus:outline-none">
             <div className="flex flex-col text-left leading-none tracking-tight">
-              <span className="font-extrabold text-2xl tracking-tight text-white font-display">NIMT</span>
-              <span className="text-sm font-medium tracking-widest text-[#93c5fd] -mt-0.5">beacon</span>
-              <span className="text-[10px] font-semibold tracking-[0.25em] text-white opacity-85 mt-0.5">SCHOOL</span>
+              <span className="font-extrabold text-3xl tracking-tight text-white font-display">NIMT</span>
+              <span className="text-base font-medium tracking-widest text-[#93c5fd] -mt-0.5">beacon</span>
+              <span className="text-xs font-semibold tracking-[0.25em] text-white opacity-85 mt-0.5">SCHOOL</span>
             </div>
             <div className="h-10 w-[1px] bg-white/20 hidden sm:block"></div>
             <div className="hidden sm:flex flex-col text-left leading-none">
-              <span className="text-xs font-semibold text-white/95 uppercase tracking-wide">Delhi NCR</span>
-              <span className="text-[9px] text-[#93c5fd] font-medium mt-0.5">Co-Ed Boarding School</span>
+              <span className="text-sm font-semibold text-white/95 uppercase tracking-wide">Delhi NCR</span>
+              <span className="text-xs text-[#93c5fd] font-medium mt-0.5">Co-Ed Boarding School</span>
             </div>
           </a>
 
@@ -46,7 +46,7 @@ export default function Header() {
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleScroll(e, link.href)}
-                className="text-sm font-semibold tracking-wide text-white/90 hover:text-white hover:underline underline-offset-4 transition-all duration-200"
+                className="text-base font-semibold tracking-wide text-white/90 hover:text-white hover:underline underline-offset-4 transition-all duration-200"
               >
                 {link.label}
               </a>
@@ -57,9 +57,9 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <a 
               href="tel:+91XXXXXXXXXX" 
-              className="flex items-center gap-2 rounded-full border border-white/30 px-4 py-2 text-xs font-bold text-white hover:bg-white/10 transition-colors duration-200"
+              className="flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-sm font-bold text-white hover:bg-white/10 transition-colors duration-200"
             >
-              <Phone className="h-3 w-3" />
+              <Phone className="h-3.5 w-3.5" />
               <span>+91-XXXXX-XXXXX</span>
             </a>
             <a
@@ -68,10 +68,10 @@ export default function Header() {
                 e.preventDefault();
                 document.querySelector("#admissions")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="rounded-full bg-white px-5 py-2 text-xs font-bold text-[#1344e6] hover:bg-blue-50 transition-all duration-200 shadow-sm flex items-center gap-1.5"
+              className="rounded-full bg-white px-6 py-2.5 text-sm font-bold text-[#1344e6] hover:bg-blue-50 transition-all duration-200 shadow-sm flex items-center gap-1.5"
             >
               <span>Apply Now</span>
-              <ArrowRight className="h-3 w-3" />
+              <ArrowRight className="h-3.5 w-3.5" />
             </a>
           </div>
 
@@ -83,7 +83,7 @@ export default function Header() {
                 e.preventDefault();
                 document.querySelector("#admissions")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="rounded-full bg-white px-3.5 py-1.5 text-xs font-bold text-[#1344e6] hover:bg-blue-50 transition-all duration-200"
+              className="rounded-full bg-white px-4 py-2 text-sm font-bold text-[#1344e6] hover:bg-blue-50 transition-all duration-200"
             >
               Apply
             </a>
@@ -107,7 +107,7 @@ export default function Header() {
               key={link.label}
               href={link.href}
               onClick={(e) => handleScroll(e, link.href)}
-              className="block rounded-lg px-3 py-2 text-base font-medium text-white hover:bg-white/10 transition-colors"
+              className="block rounded-lg px-3 py-2 text-lg font-semibold text-white hover:bg-white/10 transition-colors"
             >
               {link.label}
             </a>
@@ -115,9 +115,9 @@ export default function Header() {
           <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
             <a 
               href="tel:+91XXXXXXXXXX" 
-              className="flex items-center justify-center gap-2 rounded-lg border border-white/30 py-2.5 text-sm font-bold text-white hover:bg-white/10"
+              className="flex items-center justify-center gap-2 rounded-lg border border-white/30 py-3 text-base font-bold text-white hover:bg-white/10"
             >
-              <Phone className="h-4 w-4" />
+              <Phone className="h-4.5 w-4.5" />
               <span>Call +91-XXXXX-XXXXX</span>
             </a>
             <a
@@ -127,7 +127,7 @@ export default function Header() {
                 document.querySelector("#admissions")?.scrollIntoView({ behavior: "smooth" });
                 setMobileMenuOpen(false);
               }}
-              className="block text-center rounded-lg bg-white py-2.5 text-sm font-bold text-[#1344e6] hover:bg-blue-50"
+              className="block text-center rounded-lg bg-white py-3 text-base font-bold text-[#1344e6] hover:bg-blue-50"
             >
               Apply Now
             </a>

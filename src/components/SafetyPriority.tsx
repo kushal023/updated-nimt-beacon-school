@@ -33,10 +33,10 @@ export default function SafetyPriority() {
             <ShieldAlert className="h-6 w-6 stroke-[2.5]" />
           </div>
           
-          <h2 className="font-display text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="font-display text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl lg:leading-[1.1]">
             Your Child's Safety Is Our Highest Priority
           </h2>
-          <p className="mt-4 text-base text-gray-500 font-medium leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl text-gray-500 font-medium leading-relaxed">
             We maintain the highest standards of safety and security to ensure your child has a secure, worry-free experience.
           </p>
         </div>
@@ -48,10 +48,10 @@ export default function SafetyPriority() {
               key={index}
               className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow"
             >
-              <h3 className="text-base font-bold text-gray-900 font-display">
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 font-display">
                 {card.title}
               </h3>
-              <p className="mt-1 text-xs font-semibold text-gray-400">
+              <p className="mt-2 text-sm font-semibold text-slate-500">
                 {card.desc}
               </p>
             </div>
@@ -62,15 +62,15 @@ export default function SafetyPriority() {
         <div className="mt-12 max-w-4xl mx-auto">
           <div className="rounded-3xl border border-red-100 bg-red-50/20 p-8 shadow-sm">
             
-            <h4 className="text-sm font-bold text-red-700 tracking-widest uppercase mb-5 font-display">
+            <h4 className="text-base font-bold text-red-700 tracking-widest uppercase mb-5 font-display">
               Safety Measures
             </h4>
             
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {measures.map((measure, idx) => (
                 <div key={idx} className="flex items-start gap-2.5">
-                  <span className="text-red-600 font-bold text-sm mt-0.5">✓</span>
-                  <p className="text-sm font-semibold text-gray-600 leading-tight">
+                  <span className="text-red-600 font-bold text-base mt-1">✓</span>
+                  <p className="text-base font-semibold text-slate-600 leading-relaxed">
                     {measure}
                   </p>
                 </div>

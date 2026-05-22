@@ -18,11 +18,11 @@ export default function VideoTestimonials() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Title Block */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-display text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="text-center max-w-4xl mx-auto mb-16">
+          <h2 className="font-display text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl lg:leading-[1.1]">
             Video Testimonials
           </h2>
-          <p className="mt-4 text-base text-gray-500 font-medium leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl text-gray-500 font-medium leading-relaxed">
             Real stories from parents whose children thrive at NIMT Beacon
           </p>
         </div>
@@ -92,14 +92,14 @@ export default function VideoTestimonials() {
                   <Star key={idx} className="h-4.5 w-4.5 fill-[#eab308] text-[#eab308]" />
                 ))}
               </div>
-              <p className="mt-4 text-base font-bold text-gray-800 italic leading-relaxed">
+              <p className="mt-4 text-lg md:text-xl font-bold text-gray-800 italic leading-relaxed">
                 "{activeTestimonial.quote}"
               </p>
               <div className="mt-5 border-t border-slate-100 pt-4 text-left">
-                <span className="text-sm font-extrabold text-[#1344e6] font-display block">
+                <span className="text-base md:text-lg font-extrabold text-[#1344e6] font-display block">
                   {activeTestimonial.name}
                 </span>
-                <span className="text-xs font-semibold text-gray-400">
+                <span className="text-sm font-semibold text-gray-400">
                   {activeTestimonial.role}
                 </span>
               </div>
@@ -109,7 +109,7 @@ export default function VideoTestimonials() {
 
           {/* Testimonial Queue - Right 5 Cols */}
           <div className="lg:col-span-5 flex flex-col gap-4">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400 text-left block pl-2">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1344e6] text-left block pl-2">
               More Testimonials
             </span>
             
@@ -127,10 +127,10 @@ export default function VideoTestimonials() {
                     }`}
                   >
                     <div className="flex flex-col">
-                      <span className={`text-sm font-extrabold font-display ${isSelected ? "text-[#1344e6]" : "text-gray-800"}`}>
+                      <span className={`text-base font-extrabold font-display ${isSelected ? "text-[#1344e6]" : "text-gray-800"}`}>
                         {t.name}
                       </span>
-                      <span className="text-xs font-semibold text-gray-400 mt-0.5">
+                      <span className="text-sm font-semibold text-slate-500 mt-0.5">
                         {t.role}
                       </span>
                       <span className="text-[9px] font-semibold text-slate-400 font-mono mt-1.5 uppercase tracking-wide inline-flex items-center gap-1.5">

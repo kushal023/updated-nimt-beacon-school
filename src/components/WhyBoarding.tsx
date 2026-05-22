@@ -23,11 +23,11 @@ export default function WhyBoarding() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Title / Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-display text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="text-center max-w-4xl mx-auto mb-16">
+          <h2 className="font-display text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl lg:leading-[1.1]">
             Why More Parents Are Choosing Boarding Education
           </h2>
-          <p className="mt-4 text-base text-gray-500 font-medium leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl text-gray-500 font-medium leading-relaxed">
             Boarding schools provide a structured environment that develops discipline, focus, and leadership qualities in students.
           </p>
         </div>
@@ -42,8 +42,8 @@ export default function WhyBoarding() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 font-display text-sm font-bold text-[#1344e6] border border-blue-100">
                 {item.num}
               </div>
-              <h3 className="mt-4 text-lg font-bold text-gray-900 font-display">{item.title}</h3>
-              <p className="mt-1 text-sm font-medium text-gray-500">{item.desc}</p>
+              <h3 className="mt-4 text-xl md:text-2xl font-bold text-gray-900 font-display">{item.title}</h3>
+              <p className="mt-2 text-base md:text-lg font-medium text-slate-600">{item.desc}</p>
             </div>
           ))}
           
@@ -54,8 +54,8 @@ export default function WhyBoarding() {
                 7
               </div>
               <div>
-                <h3 className="text-lg font-bold text-gray-900 font-display">{reasons[6].title}</h3>
-                <p className="text-sm font-medium text-gray-500">{reasons[6].desc}</p>
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 font-display">{reasons[6].title}</h3>
+                <p className="text-base md:text-lg font-medium text-slate-600 mt-1">{reasons[6].desc}</p>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function WhyBoarding() {
         {/* Transformation Section */}
         <div className="mt-20">
           <div className="rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50/70 p-8 shadow-sm border border-blue-100/50 max-w-4xl mx-auto">
-            <h4 className="text-center text-xs font-bold tracking-widest text-[#1344e6] uppercase">
+            <h4 className="text-center text-sm font-bold tracking-widest text-[#1344e6] uppercase">
               Parent → Student Transformation Journey
             </h4>
             
@@ -72,14 +72,14 @@ export default function WhyBoarding() {
               
               {/* Step 1 */}
               <div className="flex flex-col items-center">
-                <span className="text-sm font-bold text-slate-400 font-display uppercase tracking-wider">Before</span>
-                <span className="mt-1.5 text-base font-bold text-slate-800">Concerned parent</span>
+                <span className="text-base font-bold text-slate-400 font-display uppercase tracking-wider">Before</span>
+                <span className="mt-2 text-lg md:text-xl font-bold text-slate-800">Concerned parent</span>
               </div>
 
               {/* Step 2 - Middle with nice line decorators */}
               <div className="flex flex-col items-center relative py-2">
                 <div className="hidden sm:block absolute left-0 right-0 top-1/2 -translate-y-1/2 h-[2px] bg-slate-200"></div>
-                <span className="relative z-10 rounded-full bg-white border border-blue-100 px-5 py-1.5 text-xs font-extrabold tracking-wide text-[#1344e6] uppercase shadow-sm">
+                <span className="relative z-10 rounded-full bg-white border border-blue-100 px-6 py-2 text-sm font-extrabold tracking-wide text-[#1344e6] uppercase shadow-sm">
                   At NIMT Beacon
                 </span>
                 <span className="text-xs font-semibold text-slate-400/90 mt-1 uppercase tracking-wider sm:hidden">Transformation</span>
@@ -87,8 +87,8 @@ export default function WhyBoarding() {
 
               {/* Step 3 */}
               <div className="flex flex-col items-center">
-                <span className="text-sm font-bold text-[#1344e6] font-display uppercase tracking-wider">After</span>
-                <span className="mt-1.5 text-base font-bold text-[#1344e6]">Confident student</span>
+                <span className="text-base font-bold text-[#1344e6] font-display uppercase tracking-wider">After</span>
+                <span className="mt-2 text-lg md:text-xl font-bold text-[#1344e6]">Confident student</span>
               </div>
 
             </div>
