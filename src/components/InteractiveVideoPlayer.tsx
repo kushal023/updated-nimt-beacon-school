@@ -36,7 +36,7 @@ export default function InteractiveVideoPlayer() {
   const [activeSubtitleIdx, setActiveSubtitleIdx] = useState<number | null>(null);
   const [videoError, setVideoError] = useState(false);
 
-  const videoSrc = "/nimt.mp4";
+  const videoSrc = "/videos/nimt.mp4";
   const thumbnailSrc = "nimt01.png";
 
   // Scan current time against subtitle segments

@@ -63,16 +63,21 @@ export const FAQs: FAQItem[] = [
 ];
 
 export const DailyRoutine: DayRoutineItem[] = [
-  { time: "6:00 AM", activity: "Wake Up & Exercise" },
-  { time: "7:00 AM", activity: "Breakfast" },
-  { time: "8:00 AM", activity: "Classes Begin" },
-  { time: "1:00 PM", activity: "Lunch & Rest" },
-  { time: "2:00 PM", activity: "Classes Resume" },
-  { time: "4:00 PM", activity: "Sports & Activities" },
-  { time: "6:00 PM", activity: "Study Time" },
-  { time: "7:30 PM", activity: "Dinner" },
-  { time: "8:00 PM", activity: "Self-Study & Mentoring" },
-  { time: "10:30 PM", activity: "Rest & Sleep" }
+  { time: "6:00 AM", activity: "Wake Up" },
+  { time: "6:00 AM – 6:30 AM", activity: "Freshen Up" },
+  { time: "6:30 AM – 7:00 AM", activity: "Morning Exercise" },
+  { time: "7:00 AM – 7:45 AM", activity: "Bath & Get Ready" },
+  { time: "7:45 AM – 8:05 AM", activity: "Breakfast" },
+  { time: "8:10 AM", activity: "Departure to School" },
+  { time: "8:30 AM – 2:00 PM", activity: "School Hours" },
+  { time: "2:00 PM – 2:30 PM", activity: "Lunch" },
+  { time: "2:30 PM – 4:30 PM", activity: "Supervised Study" },
+  { time: "4:30 PM – 5:30 PM", activity: "Games & Sports Activities" },
+  { time: "5:45 PM – 6:00 PM", activity: "Evening Snacks" },
+  { time: "6:00 PM – 7:30 PM", activity: "Evening Study Hours" },
+  { time: "7:30 PM – 8:00 PM", activity: "Dinner" },
+  { time: "8:00 PM – 9:00 PM", activity: "Self Study / Reading Time" },
+  { time: "9:00 PM – 10:00 PM", activity: "Relaxation, Bed Preparation & Lights Off" }
 ];
 
 export const Testimonials: TestimonialItem[] = [
