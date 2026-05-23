@@ -9,15 +9,16 @@ export interface DayRoutineItem {
   activity: string;
 }
 
+
 export interface TestimonialItem {
   id: string;
   name: string;
   role: string;
   stars: number;
   quote: string;
-  videoPlaceholder: string;
+  videoSrc: string;
+  thumbnail: string;
 }
-
 export const FAQs: FAQItem[] = [
   {
     id: "faq-1",
@@ -77,26 +78,29 @@ export const DailyRoutine: DayRoutineItem[] = [
 export const Testimonials: TestimonialItem[] = [
   {
     id: "t-1",
-    name: "Parent Testimonial 1",
-    role: "Parent of Class 11 Student",
+    name: "Parents of Vivan",
+    role: "Class 5th Student",
     stars: 5,
-    quote: "Our son has transformed completely. He's more confident, disciplined, and focused on his studies.",
-    videoPlaceholder: "Video Testimonial 1"
+    quote: "The school provides real-time updates and personalized feedback, helping us stay connected with our child's progress..",
+    videoSrc: "/videos/testimonial-1.mp4",
+    thumbnail: "/images/testimonial-1.png",
   },
   {
     id: "t-2",
-    name: "Parent Testimonial 2",
-    role: "Parent of Class 9 Student",
+    name: "Parent Of Kavyansh ",
+    role: "Class 11th Student",
     stars: 5,
-    quote: "The personalized attention that teachers give combined with residential support is incomparable. She has become an independent thinker and takes initiative.",
-    videoPlaceholder: "Video Testimonial 2"
+    quote: "The teachers are very helpful and supportive. We've seen a lot of improvement in our child since Class 11",
+    videoSrc: "/videos/testimonial-2.mp4",
+    thumbnail: "/images/testimonial-2.png",
   },
   {
     id: "t-3",
-    name: "Parent Testimonial 3",
-    role: "Parent of Class 12 Student",
+    name: "Parent Of Vani Kaushik",
+    role: "Class 5th Student",
     stars: 5,
-    quote: "Getting schooling and top-tier IIT-JEE training in the same campus saved hours of commuting. Our child's mental wellness and academics were both prioritised.",
-    videoPlaceholder: "Video Testimonial 3"
-  }
+    quote: "We are fully satisfied with the school. The staff and teachers have made a very valuable contribution to our child's academic and personal growth.",
+    videoSrc: "/videos/testimonial-3.mp4",
+    thumbnail: "/images/testimonial-3.png",
+  },
 ];
