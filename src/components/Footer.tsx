@@ -115,7 +115,9 @@ export default function Footer() {
 
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.facebook.com/nimtschoolgzb"
+                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#1344e6] hover:text-white transition-colors shadow-sm"
               >
@@ -123,7 +125,9 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/nimtschool"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#1344e6] hover:text-white transition-colors shadow-sm"
               >
@@ -131,7 +135,9 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.youtube.com/@nimtschool"
+                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label="YouTube"
                 className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#1344e6] hover:text-white transition-colors shadow-sm"
               >
