@@ -1,5 +1,12 @@
 import React from "react";
-import { MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Facebook,
+  Instagram,
+  Youtube,
+} from "lucide-react";
 
 export default function Footer() {
   const handleScroll = (id: string) => {
@@ -12,97 +19,140 @@ export default function Footer() {
   return (
     <footer className="bg-[#111827] text-gray-400 py-16 border-t border-gray-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
-        {/* Footers Grid - 4 Columns */}
+
+        {/* Footer Grid */}
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 pb-12 border-b border-gray-800">
-          
-          {/* Column 1 - Brand - Lg take 4 cols */}
+
+          {/* Column 1 - Brand */}
           <div className="lg:col-span-4 flex flex-col text-left">
-            <span className="font-display font-extrabold text-3xl tracking-wider text-white">NIMT Beacon</span>
+
+            {/* School Logo */}
+            <div className="flex items-center">
+              <img
+                src="/nimt-beacon-logo.png"
+                alt="NIMT Beacon School"
+                className="h-20 md:h-24 w-auto object-contain"
+              />
+            </div>
+
             <p className="mt-4 text-base font-semibold text-gray-400 leading-relaxed max-w-sm">
-              Building a Safe, Disciplined & Future-Ready Boarding Environment Where Students Learn, Grow & Succeed With Confidence.
+              Building a Safe, Disciplined & Future-Ready Boarding Environment
+              Where Students Learn, Grow & Succeed With Confidence.
             </p>
+
           </div>
 
-          {/* Column 2 - Quick Links - Lg take 2 cols */}
+          {/* Column 2 - Quick Links */}
           <div className="lg:col-span-2 flex flex-col text-left">
             <h4 className="font-display text-base font-bold text-white uppercase tracking-wider mb-4">
               Quick Links
             </h4>
+
             <ul className="space-y-3 text-base font-semibold">
-              {["Why Boarding", "Why NIMT", "Facilities", "Results"].map((label) => {
-                const id = `#${label.toLowerCase().replace(" ", "-")}`;
-                return (
-                  <li key={label}>
-                    <button 
-                      onClick={() => handleScroll(id)}
-                      className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left focus:outline-none"
-                    >
-                      {label}
-                    </button>
-                  </li>
-                );
-              })}
+              {["Why Boarding", "Why NIMT", "Facilities", "Results"].map(
+                (label) => {
+                  const id = `#${label
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")}`;
+
+                  return (
+                    <li key={label}>
+                      <button
+                        onClick={() => handleScroll(id)}
+                        className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left focus:outline-none"
+                      >
+                        {label}
+                      </button>
+                    </li>
+                  );
+                }
+              )}
             </ul>
           </div>
 
-          {/* Column 3 - Contact - Lg take 3 cols */}
+          {/* Column 3 - Contact */}
           <div className="lg:col-span-3 flex flex-col text-left">
             <h4 className="font-display text-base font-bold text-white uppercase tracking-wider mb-4">
               Contact
             </h4>
+
             <ul className="space-y-4 text-base font-semibold">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#3b82f6] shrink-0 mt-0.5" />
-                <span>Delhi NCR, India</span>
+                <span>
+                  Ansal, Avantika Ext Rd, Avantika Colony, Shastri Nagar,
+                  Ghaziabad, Uttar Pradesh 201002
+                </span>
               </li>
+
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-[#3b82f6] shrink-0 mt-0.5" />
-                <span>+91-XXXXX-XXXXX</span>
+                <a
+                  href="tel:+919599931443"
+                  className="hover:text-white transition-colors"
+                >
+                  +91 95999 31443
+                </a>
               </li>
+
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-[#3b82f6] shrink-0 mt-0.5" />
-                <a href="mailto:admissions@nimt.edu.in" className="hover:text-white transition-colors">
-                  admissions@nimt.edu.in
+                <a
+                  href="mailto:nsae@nimt.ac.in"
+                  className="hover:text-white transition-colors"
+                >
+                  nsae@nimt.ac.in
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Column 4 - Social Links - Lg take 3 cols */}
+          {/* Column 4 - Social Media */}
           <div className="lg:col-span-3 flex flex-col text-left">
             <h4 className="font-display text-base font-bold text-white uppercase tracking-wider mb-4">
               Follow Us
             </h4>
+
             <div className="flex gap-3">
-              {[
-                { icon: <Facebook className="h-5 w-5" />, link: "#" },
-                { icon: <Instagram className="h-5 w-5" />, link: "#" },
-                { icon: <Youtube className="h-5 w-5" />, link: "#" },
-              ].map((soc, i) => (
-                <a
-                  key={i}
-                  href={soc.link}
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#1344e6] hover:text-white transition-colors shadow-sm"
-                >
-                  {soc.icon}
-                </a>
-              ))}
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#1344e6] hover:text-white transition-colors shadow-sm"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#1344e6] hover:text-white transition-colors shadow-sm"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+
+              <a
+                href="#"
+                aria-label="YouTube"
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#1344e6] hover:text-white transition-colors shadow-sm"
+              >
+                <Youtube className="h-5 w-5" />
+              </a>
             </div>
           </div>
 
         </div>
 
-        {/* Bottom copyright stripe */}
+        {/* Bottom Bar */}
         <div className="pt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-sm font-semibold text-gray-500">
-          <span>© 2024 NIMT Beacon School. All rights reserved.</span>
-          
-          <div className="flex gap-6 justify-center">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-          </div>
 
-          <span className="text-gray-400 font-display text-sm">Building Excellence in Education</span>
+          <span>
+            © 2026 NIMT Beacon School. All rights reserved.
+          </span>
+
+          <span className="text-gray-400 font-display text-sm">
+            Building Excellence in Education
+          </span>
+
         </div>
 
       </div>

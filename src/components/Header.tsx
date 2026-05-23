@@ -62,7 +62,8 @@ export default function Header() {
               className="flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-sm font-bold text-white hover:bg-white/10 transition-colors duration-200"
             >
               <Phone className="h-3.5 w-3.5" />
-              <span>+91-XXXXX-XXXXX</span>
+              <span>+91-95999 31443
+</span>
             </a>
             <a
               href="#admissions"
@@ -120,7 +121,8 @@ export default function Header() {
               className="flex items-center justify-center gap-2 rounded-lg border border-white/30 py-3 text-base font-bold text-white hover:bg-white/10"
             >
               <Phone className="h-4.5 w-4.5" />
-              <span>Call +91-XXXXX-XXXXX</span>
+              <span>Call +91-95999 31443
+</span>
             </a>
             <a
               href="#admissions"
