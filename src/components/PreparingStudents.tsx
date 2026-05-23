@@ -8,23 +8,23 @@ interface PrepItem {
 export default function PreparingStudents() {
   const items: PrepItem[] = [
     {
-      image: "/smart-classroom.png",
+      image: "/smart-classroom.webp",
       label: "Smart Classrooms",
     },
     {
-      image: "/computer-lab.png",
+      image: "/computer-lab.webp",
       label: "Computer Lab",
     },
     {
-      image: "/physics-lab.png",
+      image: "/physics-lab.webp",
       label: "Physics Lab",
     },
     {
-      image: "/chemistry-lab.png",
+      image: "/chemistry-lab.webp",
       label: "Chemistry Lab",
     },
     {
-      image: "/bio-lab.png",
+      image: "/bio-lab.webp",
       label: "Biology Lab",
     },
   ];

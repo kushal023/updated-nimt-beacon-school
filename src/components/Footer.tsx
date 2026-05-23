@@ -29,7 +29,7 @@ export default function Footer() {
             {/* School Logo */}
             <div className="flex items-center">
               <img
-                src="/nimt-beacon-logo.png"
+                src="/nimt-beacon-logo.webp"
                 alt="NIMT Beacon School"
                 className="h-20 md:h-24 w-auto object-contain"
               />

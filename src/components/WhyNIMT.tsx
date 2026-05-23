@@ -8,10 +8,10 @@ interface FacilityItem {
 export default function CampusFacilities() {
   const facilities: FacilityItem[] = [
     { image: "/images/facilities/campus.jpg", name: "Campus" },
-    { image: "/hostel.png", name: "Hostel" },
-    { image: "/lab.png", name: "Labs" },
-    { image: "/play.png", name: "Sports" },
-    { image: "/neet.png", name: "Library" },
+    { image: "/hostel.webp", name: "Hostel" },
+    { image: "/lab.webp", name: "Labs" },
+    { image: "/play.webp", name: "Sports" },
+    { image: "/library.webp", name: "Library" },
   
   ];
 
@@ -44,7 +44,7 @@ export default function CampusFacilities() {
             <div className="lg:col-span-6">
               <div className="group relative h-[500px] overflow-hidden rounded-[32px] shadow-xl">
                 <img
-                  src="/campus.png"
+                  src="/campus.webp"
                   alt="Campus"
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                 />
@@ -158,7 +158,7 @@ export default function CampusFacilities() {
           <div className="lg:col-span-8">
             <div className="group relative overflow-hidden rounded-[32px] shadow-xl">
               <img
-                src="/campus1.png"
+                src="/campus1.webp"
                 alt="Main Campus"
                 className="w-full h-[500px] object-cover transition duration-700 group-hover:scale-105"
               />
@@ -181,7 +181,7 @@ export default function CampusFacilities() {
           <div className="lg:col-span-4">
             <div className="group relative overflow-hidden rounded-[32px] shadow-xl h-[500px]">
               <img
-                src="/sports.png"
+                src="/sports.webp"
                 alt="Sports Complex"
                 className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
               />

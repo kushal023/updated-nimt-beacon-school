@@ -68,7 +68,7 @@ export default function MoreThanHostel() {
   {/* Hostel Rooms Image */}
   <div className="relative overflow-hidden rounded-3xl shadow-lg group">
     <img
-      src="/hostel-room.png"
+      src="/hostel-room.webp"
       alt="Hostel Rooms"
       className="h-[280px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
     />
@@ -85,7 +85,7 @@ export default function MoreThanHostel() {
   {/* Students Bonding Image */}
   <div className="relative overflow-hidden rounded-3xl shadow-lg group">
     <img
-      src="/students-bonding.png"
+      src="/students-bonding.webp"
       alt="Students Bonding"
       className="h-[220px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
     />

@@ -88,7 +88,7 @@ export const Testimonials: TestimonialItem[] = [
     stars: 5,
     quote: "The school provides real-time updates and personalized feedback, helping us stay connected with our child's progress..",
     videoSrc: "/videos/testimonial-1.mp4",
-    thumbnail: "/images/testimonial-1.png",
+    thumbnail: "/images/testimonial-1.webp",
   },
   {
     id: "t-2",
@@ -97,7 +97,7 @@ export const Testimonials: TestimonialItem[] = [
     stars: 5,
     quote: "The teachers are very helpful and supportive. We've seen a lot of improvement in our child since Class 11",
     videoSrc: "/videos/testimonial-2.mp4",
-    thumbnail: "/images/testimonial-2.png",
+    thumbnail: "/images/testimonial-2.webp",
   },
   {
     id: "t-3",
@@ -106,6 +106,6 @@ export const Testimonials: TestimonialItem[] = [
     stars: 5,
     quote: "We are fully satisfied with the school. The staff and teachers have made a very valuable contribution to our child's academic and personal growth.",
     videoSrc: "/videos/testimonial-3.mp4",
-    thumbnail: "/images/testimonial-3.png",
+    thumbnail: "/images/testimonial-3.webp",
   },
 ];

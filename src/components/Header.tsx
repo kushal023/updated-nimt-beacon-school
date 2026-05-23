@@ -29,7 +29,7 @@ export default function Header() {
           <a href="#" className="flex items-center gap-3 group focus:outline-none">
          <div className="flex items-center">
   <img
-    src="/nimt-beacon-logo.png"
+    src="/nimt-beacon-logo.webp"
     alt="NIMT Beacon School"
     className="h-14 w-auto object-contain"
   />
