@@ -80,7 +80,7 @@ export default function StudentTransformation() {
             <div className="absolute right-0 top-0 h-16 w-16 bg-blue-500/5 blur-2xl rounded-full"></div>
             
             <h3 className="font-display text-2xl md:text-3xl font-extrabold text-[#1344e6] uppercase tracking-wider">
-              NIMT Beacon Makes the Difference
+              NIMT Beacon School Makes the Difference
             </h3>
             
             <p className="mt-4 text-base md:text-lg font-semibold text-slate-600 leading-relaxed max-w-3xl mx-auto">

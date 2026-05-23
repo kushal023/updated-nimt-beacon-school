@@ -8,7 +8,7 @@ interface Subtitle {
 }
 
 const NIMT_SUBTITLES: Subtitle[] = [
-  { startTime: 0, endTime: 3, text: "Welcome to NIMT School - welcome to nimt hostel campus" },
+  { startTime: 0, endTime: 3, text: "Welcome to NIMT School" },
   { startTime: 3, endTime: 6, text: "Our second home" },
   { startTime: 6, endTime: 10, text: "The life at NIMT Hostel is amazing" },
   { startTime: 10, endTime: 13, text: "We create beautiful memories throughout the day" },
@@ -36,8 +36,8 @@ export default function InteractiveVideoPlayer() {
   const [activeSubtitleIdx, setActiveSubtitleIdx] = useState<number | null>(null);
   const [videoError, setVideoError] = useState(false);
 
-  const videoSrc = "https://assets.mixkit.co/videos/preview/mixkit-happy-students-walking-in-modern-school-campus-43660-large.mp4";
-  const thumbnailSrc = "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80";
+  const videoSrc = "/nimt.mp4";
+  const thumbnailSrc = "nimt01.png";
 
   // Scan current time against subtitle segments
   useEffect(() => {

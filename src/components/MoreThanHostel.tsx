@@ -63,39 +63,43 @@ export default function MoreThanHostel() {
           </div>
 
           {/* Right Block Mosaic Cards matching Page 2 layout */}
-          <div className="lg:col-span-5 flex flex-col gap-4">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              
-              {/* Tall Live/Hostel Rooms Card */}
-              <div className="aspect-[4/5] sm:aspect-auto sm:h-64 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100/50 p-6 flex items-center justify-center text-center shadow-sm">
-                <span className="text-base font-bold text-slate-600 font-display tracking-wider uppercase">
-                  Hostel Rooms
-                </span>
-              </div>
-              
-              {/* Dual columns for Dining & Mentors */}
-              <div className="flex flex-col gap-4">
-                <div className="h-28 rounded-2xl bg-indigo-50/60 border border-indigo-100/50 p-4 flex items-center justify-center text-center shadow-sm">
-                  <span className="text-sm font-bold text-slate-600 font-display tracking-wider uppercase">
-                    Dining Hall
-                  </span>
-                </div>
-                <div className="h-32 rounded-2xl bg-blue-50/70 border border-blue-100/50 p-4 flex items-center justify-center text-center shadow-sm">
-                  <span className="text-sm font-bold text-slate-600 font-display tracking-wider uppercase">
-                    Mentors
-                  </span>
-                </div>
-              </div>
-              
-            </div>
+ <div className="lg:col-span-5 flex flex-col gap-5">
 
-            {/* Bottom wide photo container */}
-            <div className="h-32 rounded-2xl bg-gradient-to-r from-blue-50/50 to-indigo-50/50 border border-blue-100/30 p-6 flex items-center justify-center text-center shadow-sm">
-              <span className="text-sm font-bold text-slate-600 font-display tracking-wider uppercase">
-                Students Bonding
-              </span>
-            </div>
-          </div>
+  {/* Hostel Rooms Image */}
+  <div className="relative overflow-hidden rounded-3xl shadow-lg group">
+    <img
+      src="/hostel-room.png"
+      alt="Hostel Rooms"
+      className="h-[280px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+    <div className="absolute bottom-5 left-5">
+      <span className="text-white text-xl font-bold font-display">
+        Hostel Rooms
+      </span>
+    </div>
+  </div>
+
+  {/* Students Bonding Image */}
+  <div className="relative overflow-hidden rounded-3xl shadow-lg group">
+    <img
+      src="/students-bonding.png"
+      alt="Students Bonding"
+      className="h-[220px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+    <div className="absolute bottom-5 left-5">
+      <span className="text-white text-xl font-bold font-display">
+        Library of Knowledge
+      </span>
+    </div>
+  </div>
+
+</div>
 
         </div>
       </div>

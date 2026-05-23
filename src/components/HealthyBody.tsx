@@ -24,43 +24,49 @@ export default function HealthyBody() {
     <section className="bg-white py-20 border-t border-slate-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-stretch gap-12 lg:grid-cols-12">
-          
-          {/* Left Column Green Layout Mosaic */}
-          <div className="lg:col-span-5 flex flex-col gap-4">
-            
-            {/* Dining Hall large container */}
-            <div className="aspect-[4/3] rounded-3xl bg-green-50/70 border border-green-100 p-8 flex items-center justify-center text-center shadow-inner">
-              <span className="text-[#15803d] font-display text-base font-extrabold tracking-widest uppercase">
-                Dining Hall
-              </span>
+
+          {/* Left Column Images */}
+          <div className="lg:col-span-5 flex flex-col gap-5">
+
+            {/* Dining Hall Image */}
+            <div className="relative overflow-hidden rounded-3xl shadow-lg group">
+              <img
+                src="/dining-hall.png"
+                alt="Dining Hall"
+                className="h-[300px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+              <div className="absolute bottom-5 left-5">
+                <h3 className="text-white text-xl font-bold font-display">
+                  Dining Hall
+                </h3>
+              </div>
             </div>
 
-            {/* Split row: Balanced Meals & Sports */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="h-28 rounded-2xl bg-emerald-50/50 border border-emerald-100/40 p-4 flex items-center justify-center text-center shadow-sm">
-                <span className="text-[#166534] font-display text-sm font-bold tracking-wider uppercase">
+            {/* Balanced Meals Image */}
+            <div className="relative overflow-hidden rounded-3xl shadow-lg group">
+              <img
+                src="/balanced-meals.png"
+                alt="Balanced Meals"
+                className="h-[300px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+              <div className="absolute bottom-5 left-5">
+                <h3 className="text-white text-xl font-bold font-display">
                   Balanced Meals
-                </span>
+                </h3>
               </div>
-              <div className="h-28 rounded-2xl bg-green-50/60 border border-green-100/50 p-4 flex items-center justify-center text-center shadow-sm">
-                <span className="text-[#166534] font-display text-sm font-bold tracking-wider uppercase">
-                  Sports
-                </span>
-              </div>
-            </div>
-
-            {/* Wellness Program card */}
-            <div className="h-28 rounded-2xl bg-gradient-to-r from-green-50/40 to-emerald-50/40 border border-green-100/30 p-6 flex items-center justify-center text-center shadow-sm">
-              <span className="text-[#15803d]/90 font-display text-sm font-bold tracking-wider uppercase">
-                Wellness Program
-              </span>
             </div>
 
           </div>
 
-          {/* Right Column Content Text Block */}
+          {/* Right Column Content */}
           <div className="flex flex-col justify-center text-left lg:col-span-7">
-            
+
             <h2 className="font-display text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl lg:leading-[1.1] leading-tight">
               Healthy Body. <br />
               <span className="text-[#16a34a]">Sharp Mind.</span>

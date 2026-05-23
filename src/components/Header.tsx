@@ -27,11 +27,13 @@ export default function Header() {
           
           {/* Logo Section */}
           <a href="#" className="flex items-center gap-3 group focus:outline-none">
-            <div className="flex flex-col text-left leading-none tracking-tight">
-              <span className="font-extrabold text-3xl tracking-tight text-white font-display">NIMT</span>
-              <span className="text-base font-medium tracking-widest text-[#93c5fd] -mt-0.5">beacon</span>
-              <span className="text-xs font-semibold tracking-[0.25em] text-white opacity-85 mt-0.5">SCHOOL</span>
-            </div>
+         <div className="flex items-center">
+  <img
+    src="/nimt-beacon-logo.png"
+    alt="NIMT Beacon School"
+    className="h-14 w-auto object-contain"
+  />
+</div>
             <div className="h-10 w-[1px] bg-white/20 hidden sm:block"></div>
             <div className="hidden sm:flex flex-col text-left leading-none">
               <span className="text-sm font-semibold text-white/95 uppercase tracking-wide">Delhi NCR</span>

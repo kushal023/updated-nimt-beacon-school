@@ -158,7 +158,7 @@ export default function CampusFacilities() {
           <div className="lg:col-span-8">
             <div className="group relative overflow-hidden rounded-[32px] shadow-xl">
               <img
-                src="/images/campus-main.jpg"
+                src="/campus1.png"
                 alt="Main Campus"
                 className="w-full h-[500px] object-cover transition duration-700 group-hover:scale-105"
               />
@@ -181,7 +181,7 @@ export default function CampusFacilities() {
           <div className="lg:col-span-4">
             <div className="group relative overflow-hidden rounded-[32px] shadow-xl h-[500px]">
               <img
-                src="/images/sports-complex.jpg"
+                src="/sports.png"
                 alt="Sports Complex"
                 className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
               />
